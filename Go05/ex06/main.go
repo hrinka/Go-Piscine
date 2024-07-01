@@ -6,8 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(piscine.AppendRange(0, 16))
-	fmt.Println(piscine.AppendRange(10, 5))
-	fmt.Println(piscine.AppendRange(10, 10))
-	fmt.Println(piscine.AppendRange(-1, 3))
+	s := "HelloHAhowHAreHAyou?"
+	fmt.Printf("%#v\n", piscine.Split(s, "HA"))
 }

@@ -6,8 +6,8 @@ import (
 )
 
 func main() {
-	fmt.Println(piscine.AppendRange(0, 16))
-	fmt.Println(piscine.AppendRange(10, 5))
-	fmt.Println(piscine.AppendRange(10, 10))
-	fmt.Println(piscine.AppendRange(-1, 3))
+	fmt.Println(piscine.MakeRange(10, 5))
+	fmt.Println(piscine.MakeRange(10, 10))
+	fmt.Println(piscine.MakeRange(-1, 3))
+	fmt.Println(piscine.MakeRange(0, 16))
 }

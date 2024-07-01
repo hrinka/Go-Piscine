@@ -1,12 +1,12 @@
 package piscine
 
-func AppendRange(min, max int) []int {
-	if min >= max {
-		return nil
-	}
-	var result []int
-	for i := min; i < max; i++ {
-		result = append(result, i)
+func ConcatParams(args []string) string {
+	var result string
+	for i, arg := range args {
+		if i > 0 {
+			result += "\n"
+		}
+		result += arg
 	}
 	return result
 }
