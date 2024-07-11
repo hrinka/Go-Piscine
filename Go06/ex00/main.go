@@ -6,8 +6,6 @@ import (
 )
 
 const (
-	yes     = true
-	no      = false
 	EvenMsg = "I have an even number of arguments"
 	OddMsg  = "I have an odd number of arguments"
 )
@@ -21,9 +19,9 @@ func printStr(s string) {
 
 func isEven(nbr int) bool {
 	if even(nbr) {
-		return yes
+		return true
 	} else {
-		return no
+		return false
 	}
 }
 
