@@ -6,11 +6,22 @@ import (
 	"piscine"
 )
 
+func countArgs(args []string) int {
+	count := 0
+	for range args {
+		count++
+	}
+	return count
+
+}
+
 func main() {
-	if len(os.Args) == 1 {
+	argCount := countArgs(os.Args)
+
+	if argCount == 1 {
 		fmt.Println("File name missing")
 		return
-	} else if len(os.Args) > 2 {
+	} else if argCount > 2 {
 		fmt.Println("Too many arguments")
 		return
 	}

@@ -18,19 +18,23 @@ func printStr(s string) {
 }
 
 func isEven(nbr int) bool {
-	if even(nbr) {
+	if nbr%2 == 0 {
 		return true
 	} else {
 		return false
 	}
 }
 
-func even(nbr int) bool {
-	return nbr%2 == 0
+func countArgs(args []string) int {
+	count := 0
+	for range args {
+		count++
+	}
+	return count
 }
 
 func main() {
-	lengthOfArg := len(os.Args) - 1
+	lengthOfArg := countArgs(os.Args) - 1
 	if isEven(lengthOfArg) {
 		printStr(EvenMsg)
 	} else {
