@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func countArgs(args []string) int {
+func CountArgs(args []string) int {
 	count := 0
 	for range args {
 		count++
@@ -14,7 +14,7 @@ func countArgs(args []string) int {
 }
 
 func Cat(files []string) {
-	if countArgs(files) == 0 {
+	if CountArgs(files) == 0 {
 		readFromStdin()
 		return
 	}
